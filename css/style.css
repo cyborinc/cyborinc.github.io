@@ -1,3 +1,8 @@
+@font-face {
+    font-family: RamaGothic;
+    src: url("fonts/RamaGothic.otf") format("opentype");
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -16,4 +21,12 @@ body {
   width: 182px;
   height: 307px;
   padding: 10px;
+}
+
+p {
+  font-family: RamaGothic, Helvetica, sans-serif;
+  display: block;
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  color: #696a6d;
 }

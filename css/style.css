@@ -1,6 +1,6 @@
 @font-face {
     font-family: RamaGothic;
-    src: url("fonts/RamaGothic.otf") format("opentype");
+    src: url("/fonts/RamaGothic.otf") format("opentype");
 }
 
 * {
@@ -23,10 +23,16 @@ body {
   padding: 10px;
 }
 
-p {
+#timer {
   font-family: RamaGothic, Helvetica, sans-serif;
   display: block;
   font-size: 12vw;
   text-transform: uppercase;
   color: #696a6d;
+}
+
+@media screen and (min-width: 800px) {
+  #timer {
+  font-size: 3.5rem;
+}
 }

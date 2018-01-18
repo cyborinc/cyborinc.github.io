@@ -1,6 +1,6 @@
 @font-face {
     font-family: RamaGothic;
-    src: url("/fonts/RamaGothic.otf") format("opentype");
+    src: url("../fonts/RamaGothic.otf") format("opentype");
 }
 
 * {

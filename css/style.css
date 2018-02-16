@@ -1,38 +1,93 @@
+:root {
+  --jumbotron-padding-y: 3rem;
+}
+
 @font-face {
     font-family: RamaGothic;
     src: url("../fonts/RamaGothic.otf") format("opentype");
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 body {
   background-color: #414042;
 }
 
-.content {
-  text-align: center;
+.jumbotron {
+  padding-top: var(--jumbotron-padding-y);
+  padding-bottom: var(--jumbotron-padding-y);
+  margin-bottom: 0;
+  background-color: #fff;
 }
 
-#logo {
-  width: 182px;
-  height: 307px;
-  padding: 10px;
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: calc(var(--jumbotron-padding-y) * 2);
+    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+  }
 }
 
-#timer {
+.white-bg {
+  background-color: #fff;
+}
+
+.brown-bg {
+  background-color: #3b2416;
+}
+
+.logo {
+  width: 91px;
+  height: 154px;
+  padding: 20px;
+}
+
+.container-fluid, .jumbotron {
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+}
+
+.jumbo-ybor {
+  background: 
+    linear-gradient(
+      rgba(94, 69, 52, 0.45),
+      rgba(94, 69, 52, 0.45)
+    ),
+    url("../img/ybor.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbo-ybor-text {
   font-family: RamaGothic, Helvetica, sans-serif;
-  display: block;
-  font-size: 12vw;
+  font-size: 3.5rem;
+  line-height: 3.5rem;
   text-transform: uppercase;
-  color: #696a6d;
+  color: #FFF;
+  padding: 5.5rem;
+  margin: 0;
+  text-shadow: 1px 1px 1px rgba(50, 50, 50, 1);
 }
 
-@media screen and (min-width: 800px) {
-  #timer {
-  font-size: 3.5rem;
+.white-h2 {
+  font-family: RamaGothic, Helvetica, sans-serif;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  text-transform: uppercase;
+  color: #FFF;
+  padding: 5.5rem;
+  margin: 0;
 }
+
+.grey-h1 {
+  font-family: RamaGothic, Helvetica, sans-serif;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  text-transform: uppercase;
+  color: #808284;
+}
+
+.grey-p {
+  font-family: 'Cormornt Garamond', serif;
+  font-size: 1.25rem;
+  color: #8d8c8e;
+
 }

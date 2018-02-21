@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond');
 :root {
   --jumbotron-padding-y: 3rem;
 }
@@ -25,12 +26,16 @@ body {
   }
 }
 
-.white-bg {
-  background-color: #fff;
-}
-
 .brown-bg {
   background-color: #3b2416;
+}
+
+.grey-bg {
+  background-color: #383637;
+}
+
+.white-bg {
+  background-color: #fff;
 }
 
 .logo {
@@ -57,7 +62,7 @@ body {
 }
 
 .jumbo-ybor-text {
-  font-family: RamaGothic, Helvetica, sans-serif;
+  font-family: RamaGothic, sans-serif;
   font-size: 3.5rem;
   line-height: 3.5rem;
   text-transform: uppercase;
@@ -68,7 +73,7 @@ body {
 }
 
 .white-h2 {
-  font-family: RamaGothic, Helvetica, sans-serif;
+  font-family: RamaGothic, sans-serif;
   font-size: 2.5rem;
   line-height: 2.5rem;
   text-transform: uppercase;
@@ -77,8 +82,13 @@ body {
   margin: 0;
 }
 
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+  background-color: #383637 !important;
+  border-color: #3b2417 !important;
+}
+
 .grey-h1 {
-  font-family: RamaGothic, Helvetica, sans-serif;
+  font-family: RamaGothic, sans-serif;
   font-size: 2.5rem;
   line-height: 2.5rem;
   text-transform: uppercase;
@@ -86,8 +96,15 @@ body {
 }
 
 .grey-p {
-  font-family: 'Cormornt Garamond', serif;
+  font-family: 'Cormorant Garamond', sans-serif;
   font-size: 1.25rem;
   color: #8d8c8e;
+  padding: 3.5rem 0 3.5rem 0;
+}
 
+.lost-places {
+  background: 
+    url("../img/lost-places.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }

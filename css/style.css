@@ -112,3 +112,20 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+@media (max-width: 768px) {
+  .jumbo-ybor-text {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding: 2.5rem;
+  }
+
+  .grey-p {
+    font-size: 1.0rem;
+    padding: 2rem 0 2rem 0;
+  }
+
+  .white-h2 {
+    padding: 3rem;
+  }
+}

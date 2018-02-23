@@ -50,6 +50,10 @@ body {
   border-radius: 0;
 }
 
+.row {
+  margin: 0;
+}
+
 .jumbo-ybor {
   background: 
     linear-gradient(

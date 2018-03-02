@@ -20,6 +20,13 @@
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/style.css">
   <title>cYbor</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript">
+  function thank() {
+    $('#joinus').hide();
+    $('#thankyou').show();
+  }
+  </script>
 </head>
 <body>
   <header class="container-fluid white-bg text-center">
@@ -51,20 +58,20 @@
       </div>
     </section>
 
-    <section class="container-fluid white-bg text-center">
+    <section id="joinus" name="joinus" class="container-fluid white-bg text-center">
       <div class="row">
           <div class="col-md-8 offset-md-2"><h1 class="grey-h1">Join Us</h1></div>
       </div>
-      <form class="form" role="form">
+      <form class="form" name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScFE4sRWBNBya_lBHHaBL7eS12UgFTp_yrkROFKLBCcfqiDbQ/formResponse?" target="hidden_iframe" onsubmit="thank()">
       <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-4">
-          <label class="sr-only" for="inlineFormInputName2">Name</label>
-          <input type="text" class="form-control mb-2" id="inlineFormInputName2" placeholder="Name">
+          <label class="sr-only" for="entry.1916698151">Name</label>
+          <input type="text" class="form-control mb-2" name="entry.1916698151" id="entry.1916698151" placeholder="Name">
         </div>
         <div class="col-md-4">
-          <label class="sr-only" for="inlineFormInputGroupUsername2">Email</label>
-          <input type="text" class="form-control mb-2" id="inlineFormInputGroupUsername2" placeholder="Email">
+          <label class="sr-only" for="entry.1029471437">Email</label>
+          <input type="text" class="form-control mb-2" name="entry.1029471437" id="entry.1029471437" placeholder="Email">
         </div>
         <div class="col-md-2"></div>
       </div>
@@ -72,6 +79,13 @@
           <div class="col-md-8 offset-md-2"><button type="submit" class="btn btn-primary mb-2">Submit</button></div>
       </div>
       </form>
+      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" ></iframe>
+    </section>
+
+    <section id="thankyou" name="thankyou" class="container-fluid white-bg text-center" style="display:none;">
+      <div class="row">
+        <div class="col-md-8 offset-md-2"><h1 class="grey-h1">Submission received, thank you.</h1></div>
+      </div>
     </section>
 
     <section class="container-fluid lost-places text-center">
